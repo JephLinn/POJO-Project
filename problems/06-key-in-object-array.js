@@ -20,16 +20,15 @@ keyInObjectArray(objArray, 'animal'); // => false
 ***********************************************************************/
 
 function keyInObjectArray(objArray, keyString) {
-  objArray.forEach((obj) => {
-    Object.keys(obj).forEach ()
-      let val = obj[key];
+  for (let i = 0; i < objArray.length; i++) {
+    let obj = objArray[i] 
+    if (Object.hasOwn(obj, keyString)) {
+        return true};
+    };
+    return false
+  }
+  
 
-      if (val = keyString) {
-      return true};
-    }
-  })
-  return false
-}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = keyInObjectArray;
